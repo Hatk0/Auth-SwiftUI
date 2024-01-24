@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Auth-SwiftUI
-//
-//  Created by Dmitry Yastrebov on 24.01.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
