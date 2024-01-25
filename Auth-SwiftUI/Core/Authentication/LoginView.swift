@@ -43,6 +43,17 @@ struct LoginView: View {
                 .padding(.top, 25)
                 
                 Spacer()
+                
+                NavigationLink {
+                    
+                } label: {
+                    HStack(spacing: 2) {
+                        Text("Don't have an account?")
+                        Text("Sign up")
+                            .bold()
+                    }
+                    .font(.system(size: 14))
+                }
             }
         }
     }
