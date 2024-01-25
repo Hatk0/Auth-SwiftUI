@@ -26,26 +26,15 @@ struct LoginView: View {
                 }
                 .padding(.horizontal)
                 .padding(.top, 12)
-                
-                Button {
+
+                ButtonView(label: "SIGN IN") {
                     print("Log user in")
-                } label: {
-                    HStack {
-                        Text("SIGN IN")
-                            .fontWeight(.semibold)
-                        Image(systemName: "arrow.right")
-                    }
-                    .foregroundColor(.white)
-                    .frame(width: UIScreen.main.bounds.width - 32, height: 48)
                 }
-                .background(Color(.systemBlue))
-                .cornerRadius(10)
-                .padding(.top, 25)
                 
                 Spacer()
                 
                 NavigationLink {
-                    
+                    SignUpView()
                 } label: {
                     HStack(spacing: 2) {
                         Text("Don't have an account?")
