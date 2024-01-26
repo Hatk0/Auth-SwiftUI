@@ -5,7 +5,7 @@ struct ProfileView: View {
         List {
             Section {
                 HStack {
-                    Text("DY")
+                    Text(User.MOCK_USER.initials)
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
@@ -14,13 +14,13 @@ struct ProfileView: View {
                         .clipShape(Circle())
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Dmitry Yastrebov")
+                        Text(User.MOCK_USER.fullname)
                             .fontWeight(.semibold)
                             .padding(.top, 4)
                         
-                        Text("hatk02019@gmail.com")
+                        Text(User.MOCK_USER.email)
                             .font(.footnote)
-                            .tint(.gray)
+                            .foregroundColor(.gray)
                     }
                 }
             }
